@@ -24,7 +24,7 @@ Um aplicativo web moderno de sons relaxantes para ajudar você a dormir melhor. 
 
 ## Como Usar
 
-1. Acesse o aplicativo em [https://elias001011.github.io/elias001011/](https://elias001011.github.io/elias001011/)
+1. Acesse o aplicativo em [https://elias001011.github.io/elias001011/](https://elias001011.github.io/SleepSounds/)
 2. Selecione os sons que deseja ouvir clicando nos cards
 3. Ajuste o volume de cada som usando os controles deslizantes
 4. Configure um timer de desligamento se desejar
