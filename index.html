@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sons para Dormir</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2c3e50">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/icon-192x192.png">
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Sons para Dormir</h1>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
+
+        <div class="timer-section">
+            <div class="timer-display">
+                <span id="timer-value">∞</span>
+                <span class="timer-label">minutos</span>
+            </div>
+            <div class="timer-buttons">
+                <button class="timer-btn" data-time="20">20</button>
+                <button class="timer-btn" data-time="30">30</button>
+                <button class="timer-btn" data-time="40">40</button>
+                <button class="timer-btn" data-time="50">50</button>
+                <button class="timer-btn" data-time="60">60</button>
+                <button class="timer-btn timer-cancel" data-time="0">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="sounds-container">
+            <div class="sounds-category">
+                <h2>Ruídos</h2>
+                <div class="sounds-grid">
+                    <div class="sound-card" data-sound="audiocheck.net_PinkNoise_15min.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Ruído Rosa</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="audiocheck.net_BrownNoise_15min.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Ruído Marrom</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="audiocheck.net_WhiteNoise_15min.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Ruído Branco</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sounds-category">
+                <h2>Chuva</h2>
+                <div class="sounds-grid">
+                    <div class="sound-card" data-sound="Gentle-rain-loop.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Chuva Suave</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Light-rain-on-plastic-roof-sound-effect.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Chuva no Telhado</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Heavy-rainfall-sound-effect.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-cloud-showers-heavy"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Chuva Forte</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Rain-and-thunder-relaxing-sound-effect.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Chuva com Trovões</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Heavy-rain-and-thunder-sounds-for-sleeping.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Tempestade Forte</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Thunder-with-rain-sound-effect.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Trovões Intensos</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Rolling-thunder-and-rain-sounds.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Trovões Distantes</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sounds-category">
+                <h2>Chuva no Carro</h2>
+                <div class="sounds-grid">
+                    <div class="sound-card" data-sound="Raindrops-on-the-car-window-sound-effect.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Chuva na Janela do Carro</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Rain-sound-inside-a-car.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Chuva Dentro do Carro</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Sleep-sounds-rain-in-a-car.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Dormir no Carro com Chuva</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Heavy-rain-and-cars-on-a-wet-road-sound-effect.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Chuva e Carros na Estrada</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sounds-category">
+                <h2>Natureza</h2>
+                <div class="sounds-grid">
+                    <div class="sound-card" data-sound="Forest-ambience.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Ambiente de Floresta</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Crickets-and-wind-sounds-at-night-sound-effect.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Grilos e Vento Noturno</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Birdcalls-forest-ambience.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-dove"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Pássaros na Floresta</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sounds-category">
+                <h2>Música e Ambiente</h2>
+                <div class="sounds-grid">
+                    <div class="sound-card" data-sound="Background-piano-music.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Piano de Fundo</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Relax-music-solo-piano.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Piano Solo Relaxante</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                    <div class="sound-card" data-sound="Subway-metro-ride-interior.mp3">
+                        <div class="sound-icon">
+                            <i class="fas fa-subway"></i>
+                        </div>
+                        <div class="sound-info">
+                            <h3>Interior do Metrô</h3>
+                            <input type="range" min="0" max="100" value="70" class="volume-slider">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="active-sounds-bar">
+            <div class="active-sounds-container">
+                <!-- Sons ativos serão adicionados aqui via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        // Registrar o Service Worker para funcionalidade offline
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado com sucesso:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Falha ao registrar o Service Worker:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
