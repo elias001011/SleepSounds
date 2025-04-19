@@ -9,7 +9,7 @@ const activeSoundsContainer = document.querySelector('.active-sounds-container')
 // Armazenar os sons ativos
 let activeSounds = [];
 let timerInterval = null;
-let timerValue = 0; // em minutos
+let timerValue = 0; // em segundos
 
 // Inicialização
 document.addEventListener('DOMContentLoaded', () => {
@@ -214,7 +214,7 @@ function setTimer(e) {
     }
     
     // Configurar novo timer
-    timerValue = minutes;
+    timerValue = minutes * 60; // Converter para segundos
     updateTimerDisplay();
     
     timerInterval = setInterval(() => {
@@ -226,13 +226,16 @@ function setTimer(e) {
             stopAllSounds();
             clearInterval(timerInterval);
             timerInterval = null;
+            timerDisplay.textContent = '∞';
         }
-    }, 60000); // Atualizar a cada minuto
+    }, 1000); // Atualizar a cada segundo
 }
 
 // Atualizar exibição do timer
 function updateTimerDisplay() {
-    timerDisplay.textContent = timerValue;
+    const minutes = Math.floor(timerValue / 60);
+    const seconds = timerValue % 60;
+    timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
 }
 
 // Parar todos os sons
@@ -271,3 +274,4 @@ document.addEventListener('visibilitychange', () => {
         }
     }
 });
+        
