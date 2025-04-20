@@ -2,7 +2,6 @@
 
 Um aplicativo web moderno de sons relaxantes para ajudar você a dormir melhor. Desenvolvido com HTML, CSS e JavaScript puros, este aplicativo permite reproduzir múltiplos sons simultaneamente, com controle de volume independente e timer de desligamento automático.
 
-![Screenshot do aplicativo](https://via.placeholder.com/800x400?text=Sons+para+Dormir)
 
 ## Funcionalidades
 
