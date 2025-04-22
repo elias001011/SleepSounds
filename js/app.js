@@ -12,7 +12,7 @@ let timerInterval = null;
 let timerValue = 0; // em segundos
 
 // Constantes para o efeito de fade
-const FADE_DURATION = 500; // Duração do fade em milissegundos (0.5 segundos)
+const FADE_DURATION = 1000; // Duração do fade em milissegundos (0.5 segundos)
 const FADE_STEPS = 20;     // Número de passos para o fade
 
 // Inicialização
